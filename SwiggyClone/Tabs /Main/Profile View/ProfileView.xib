@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileView" customModule="SwiggyClone" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="i5M-Pr-FkT" id="Ve6-Qg-Ibf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdN-h5-Los">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5jn-WH-eOU">
+                            <rect key="frame" x="0.0" y="10" width="320" height="74"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIMANSHU LAHOTI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVq-27-Mmq">
+                                    <rect key="frame" x="10" y="5" width="190" height="29"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="+91-9851082495" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHQ-a5-zFI">
+                                    <rect key="frame" x="5" y="44" width="100" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="himanshulahoti20@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oL4-G0-WOz">
+                                    <rect key="frame" x="130" y="44.5" width="170" height="14.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQW-QX-fiq">
+                                    <rect key="frame" x="250" y="5" width="55" height="29.5"/>
+                                    <color key="tintColor" red="1" green="0.44574499200000001" blue="0.38440438490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="EDIT">
+                                                <attributes>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="editButtonTapped:" destination="-1" eventType="touchUpInside" id="pNN-fn-PdT"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="jHQ-a5-zFI" firstAttribute="top" secondItem="jVq-27-Mmq" secondAttribute="bottom" constant="10" id="2d1-Yj-QP1"/>
+                                <constraint firstItem="nQW-QX-fiq" firstAttribute="top" secondItem="5jn-WH-eOU" secondAttribute="top" constant="5" id="2ko-zF-YF9"/>
+                                <constraint firstItem="jVq-27-Mmq" firstAttribute="leading" secondItem="5jn-WH-eOU" secondAttribute="leading" constant="10" id="9bG-Tu-ifb"/>
+                                <constraint firstAttribute="bottom" secondItem="jHQ-a5-zFI" secondAttribute="bottom" constant="15" id="BIN-83-QRf"/>
+                                <constraint firstItem="jHQ-a5-zFI" firstAttribute="leading" secondItem="5jn-WH-eOU" secondAttribute="leading" constant="5" id="Fg8-ub-dKn"/>
+                                <constraint firstAttribute="trailing" secondItem="oL4-G0-WOz" secondAttribute="trailing" constant="20" id="MWQ-mN-OHd"/>
+                                <constraint firstAttribute="bottom" secondItem="oL4-G0-WOz" secondAttribute="bottom" constant="15" id="QuT-6w-rYM"/>
+                                <constraint firstItem="jVq-27-Mmq" firstAttribute="top" secondItem="5jn-WH-eOU" secondAttribute="top" constant="5" id="YWL-28-1Es"/>
+                                <constraint firstItem="nQW-QX-fiq" firstAttribute="leading" secondItem="jVq-27-Mmq" secondAttribute="trailing" constant="50" id="dLf-RT-P6l"/>
+                                <constraint firstAttribute="trailing" secondItem="nQW-QX-fiq" secondAttribute="trailing" constant="15" id="ybX-fm-KxE"/>
+                                <constraint firstItem="oL4-G0-WOz" firstAttribute="top" secondItem="nQW-QX-fiq" secondAttribute="bottom" constant="10" id="ynz-oc-yN7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="5jn-WH-eOU" firstAttribute="leading" secondItem="TdN-h5-Los" secondAttribute="leading" id="2h1-AH-u5F"/>
+                        <constraint firstItem="5jn-WH-eOU" firstAttribute="top" secondItem="TdN-h5-Los" secondAttribute="top" constant="10" id="ARt-ab-q0T"/>
+                        <constraint firstAttribute="trailing" secondItem="5jn-WH-eOU" secondAttribute="trailing" id="l1m-hO-5YD"/>
+                        <constraint firstAttribute="bottom" secondItem="5jn-WH-eOU" secondAttribute="bottom" constant="484" id="qgv-H6-1FP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TdN-h5-Los" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QRY-d7-MvN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="TdN-h5-Los" secondAttribute="bottom" id="Qrg-2n-wsg"/>
+                <constraint firstItem="TdN-h5-Los" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c26-wU-LCW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TdN-h5-Los" secondAttribute="trailing" id="pz1-dI-Kbl"/>
+            </constraints>
+            <point key="canvasLocation" x="-116.25" y="95.070422535211264"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

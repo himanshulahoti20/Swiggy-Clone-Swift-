@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ComoditiesCell" id="gTV-IL-0wX" customClass="ComoditiesCell" customModule="SwiggyClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="148" height="222"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="148" height="222"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="End-4H-umX">
+                        <rect key="frame" x="5" y="5" width="138" height="212"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food4" translatesAutoresizingMaskIntoConstraints="NO" id="F9q-xl-atE">
+                                <rect key="frame" x="19" y="5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="gzN-G7-eb9"/>
+                                    <constraint firstAttribute="width" constant="100" id="qkj-TH-SZw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fortune Refined Oil " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivy-Lr-55q">
+                                <rect key="frame" x="10" y="110" width="118" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lBR-ie-1nb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500ml" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpx-FQ-uhY">
+                                <rect key="frame" x="10" y="155" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="1yE-hw-rs7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rs 29" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNJ-cz-T5Q">
+                                <rect key="frame" x="10" y="181" width="50" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="rLB-vg-43N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ivy-Lr-55q" secondAttribute="trailing" constant="10" id="184-Vu-BpH"/>
+                            <constraint firstItem="Ivy-Lr-55q" firstAttribute="top" secondItem="F9q-xl-atE" secondAttribute="bottom" constant="5" id="3Cs-fQ-nwC"/>
+                            <constraint firstItem="mpx-FQ-uhY" firstAttribute="leading" secondItem="End-4H-umX" secondAttribute="leading" constant="10" id="6vB-iU-xaj"/>
+                            <constraint firstItem="F9q-xl-atE" firstAttribute="centerX" secondItem="End-4H-umX" secondAttribute="centerX" id="I8r-u0-ODr"/>
+                            <constraint firstItem="LNJ-cz-T5Q" firstAttribute="leading" secondItem="End-4H-umX" secondAttribute="leading" constant="10" id="bs6-yl-z9i"/>
+                            <constraint firstItem="Ivy-Lr-55q" firstAttribute="leading" secondItem="End-4H-umX" secondAttribute="leading" constant="10" id="pmy-6e-fDq"/>
+                            <constraint firstItem="F9q-xl-atE" firstAttribute="top" secondItem="End-4H-umX" secondAttribute="top" constant="5" id="tF4-tZ-ZbG"/>
+                            <constraint firstItem="mpx-FQ-uhY" firstAttribute="top" secondItem="Ivy-Lr-55q" secondAttribute="bottom" constant="5" id="u1y-8J-ZPp"/>
+                            <constraint firstItem="LNJ-cz-T5Q" firstAttribute="top" secondItem="mpx-FQ-uhY" secondAttribute="bottom" constant="5" id="wIl-ay-Xn0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="End-4H-umX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="7rA-9A-hJU"/>
+                <constraint firstAttribute="trailing" secondItem="End-4H-umX" secondAttribute="trailing" constant="5" id="jyo-21-n0h"/>
+                <constraint firstItem="End-4H-umX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="lIY-q9-MGQ"/>
+                <constraint firstAttribute="bottom" secondItem="End-4H-umX" secondAttribute="bottom" constant="5" id="r7O-MI-F30"/>
+            </constraints>
+            <size key="customSize" width="148" height="222"/>
+            <connections>
+                <outlet property="comodityImage" destination="F9q-xl-atE" id="itU-bg-gEW"/>
+                <outlet property="comodityName" destination="Ivy-Lr-55q" id="DaI-ET-ik0"/>
+                <outlet property="comodityPrice" destination="LNJ-cz-T5Q" id="SEN-4o-HQ9"/>
+                <outlet property="comodityWeight" destination="mpx-FQ-uhY" id="qb4-f4-hmH"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="169.41964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="food4" width="284" height="177"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
